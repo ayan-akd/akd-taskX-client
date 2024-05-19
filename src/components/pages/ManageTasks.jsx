@@ -76,10 +76,10 @@ const ManageTasks = () => {
   if (isLoading) {
     return <CustomSpinner></CustomSpinner>;
   }
-  const filterByEmail = tasks.filter((task) => task.hostEmail === user?.email);
-  const todo = filterByEmail.filter((task) => task.status === "todo");
-  const ongoing = filterByEmail.filter((task) => task.status === "ongoing");
-  const completed = filterByEmail.filter((task) => task.status === "completed");
+  const filterByEmail = tasks?.filter((task) => task.hostEmail === user?.email);
+  const todo = filterByEmail?.filter((task) => task.status === "todo");
+  const ongoing = filterByEmail?.filter((task) => task.status === "ongoing");
+  const completed = filterByEmail?.filter((task) => task.status === "completed");
 
   return (
     <div>
