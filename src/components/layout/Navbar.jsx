@@ -54,34 +54,6 @@ const NavBar = () => {
           Add Tasks
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending "
-              : isActive
-              ? "font-extrabold text-white  mr-1 bg-rose p-3 rounded-lg"
-              : "mr-1 font-semibold text-lg"
-          }
-          to="/about"
-        >
-          About Us
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending "
-              : isActive
-              ? "font-extrabold text-white  mr-1 bg-rose p-3 rounded-lg"
-              : "mr-1 font-semibold text-lg"
-          }
-          to="/contact"
-        >
-          Contact Us
-        </NavLink>
-      </li>
     </>
   );
 
