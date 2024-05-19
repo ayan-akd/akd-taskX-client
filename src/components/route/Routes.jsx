@@ -4,12 +4,12 @@ import Home from "../home/Home";
 import ErrorPage from "../pages/ErrorPage";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import About from "../pages/about";
 import Contact from "../pages/contact";
 import PrivateRoute from "./PrivateRoute";
 
 import ManageTasks from "../pages/ManageTasks";
 import AddTask from "../pages/AddTask";
+import About from "../pages/About";
 
 const router = createBrowserRouter([
   {
@@ -47,19 +47,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: (
-          <PrivateRoute>
-            <About></About>
-          </PrivateRoute>
-        ),
+        element: <About></About>
       },
       {
         path: "/contact",
-        element: (
-          <PrivateRoute>
-            <Contact></Contact>
-          </PrivateRoute>
-        ),
+        element: <Contact></Contact>,
       },
     ],
   },
