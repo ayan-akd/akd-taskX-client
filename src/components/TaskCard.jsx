@@ -58,7 +58,7 @@ const TaskCard = ({ task }) => {
             onClick={() => handleEdit()}
           >
             <MdEdit className="text-2xl" />
-            Edit
+            Update
           </button>
           <button
             className="btn bg-rose text-white hover:bg-rose border-none"
