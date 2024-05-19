@@ -63,8 +63,8 @@ const AddTask = () => {
                 )}
               />
             </label>
-            {errors.campName && (
-              <span className="text-error">{errors.campName.message}</span>
+            {errors.taskName && (
+              <span className="text-error">{errors.taskName.message}</span>
             )}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
