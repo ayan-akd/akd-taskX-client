@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import Wip from "../Wip";
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <div>
       <Helmet>
@@ -12,4 +12,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;
